@@ -1,0 +1,27 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #181818;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #1db954;
+    padding: 20px;
+    font-size: 24px;
+}
+button {
+    background: #1db954;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+}
