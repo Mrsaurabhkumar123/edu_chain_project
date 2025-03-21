@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Music Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Decentralized Music Streaming</h1>
+        <button onclick="connectWallet()">Connect Wallet</button>
+    </header>
+    <main>
+        <section id="registerArtist">
+            <h2>Register as Artist</h2>
+            <input type="text" id="artistName" placeholder="Artist Name">
+            <input type="text" id="artistProfile" placeholder="Profile IPFS Hash">
+            <button onclick="registerArtist()">Register</button>
+        </section>
+        <section id="uploadTrack">
+            <h2>Upload Track</h2>
+            <input type="text" id="trackTitle" placeholder="Track Title">
+            <input type="text" id="trackIPFS" placeholder="IPFS Hash">
+            <input type="text" id="metadataHash" placeholder="Metadata Hash">
+            <input type="number" id="trackPrice" placeholder="Price in Wei">
+            <input type="text" id="trackGenre" placeholder="Genre">
+            <button onclick="uploadTrack()">Upload</button>
+        </section>
+        <section id="streamTrack">
+            <h2>Stream Track</h2>
+            <input type="number" id="trackId" placeholder="Track ID">
+            <button onclick="streamTrack()">Stream</button>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
